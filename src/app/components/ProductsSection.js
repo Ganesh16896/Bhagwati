@@ -51,7 +51,7 @@ const productItems = [
   {
     name: "Chemicals & Spares",
     desc: "Activated carbon, resin, antiscalants, and genuine replacement parts supplied for all makes of water treatment plants.",
-    img: "/images/ro-chemicals.jpeg",
+    img: "/images/chamical.jpg",
     imgPosition: "0% 100%",
     tag: "CHEM",
   },

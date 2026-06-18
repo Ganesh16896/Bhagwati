@@ -21,7 +21,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav
+    <div
       className="navbar"
       style={{
         background: scrolled
@@ -94,6 +94,6 @@ export default function Navbar() {
           ))}
         </div>
       )}
-    </nav>
+    </div>
   );
 }

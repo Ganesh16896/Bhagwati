@@ -49,5 +49,5 @@ temp/
 *.swp
 
 
-public/videos/
-*.mp4
+# public/videos/
+# *.mp4

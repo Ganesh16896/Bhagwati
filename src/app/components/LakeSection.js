@@ -30,6 +30,45 @@ const tsiSteps = [
   "Long-term AMC & quarterly TSI reporting",
 ];
 
+const lakePhotos = [
+  {
+    img: "/images/WaterQualitySurvey.jpg",
+    tag: "Survey",
+    title: "Baseline Water Quality Survey",
+    desc: "Initial TSI mapping and nutrient profiling of hypereutrophic water bodies.",
+  },
+  {
+    img: "/images/aerace_system.jpg",
+    tag: "Aeration",
+    title: "Aeration System Installation",
+    desc: "Diffused aeration arrays deployed to restore dissolved oxygen levels.",
+  },
+  {
+    img: "/images/Wetland.avif",
+    tag: "Wetland",
+    title: "Constructed Wetland",
+    desc: "Engineered wetlands for natural nutrient polishing and inflow treatment.",
+  },
+  {
+    img: "/images/After.jpg",
+    tag: "After",
+    title: "Post-Restoration Recovery",
+    desc: "Clear water phase established after algae bloom suppression program.",
+  },
+  {
+    img: "/images/Monitoring.jpeg",
+    tag: "Monitoring",
+    title: "Water Quality Monitoring",
+    desc: "Real-time TSI tracking and quarterly reporting for long-term AMC.",
+  },
+  {
+    img: "/images/Analysis.webp",
+    tag: "Analysis",
+    title: "Laboratory TSI Analysis",
+    desc: "Sediment nutrient analysis and algae species identification in our lab.",
+  },
+];
+
 export default function LakeSection() {
   return (
     <section id="lake" className="lake-section">
@@ -90,6 +129,32 @@ export default function LakeSection() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+
+        <div className="lake-gallery">
+          <div className="lake-gallery-header">
+            <p className="lake-label">Project Gallery</p>
+            <h3 className="lake-gallery-title">Restoration in Action</h3>
+            <p className="lake-gallery-desc">
+              Real projects across India — from baseline survey to
+              post-restoration recovery.
+            </p>
+          </div>
+          <div className="lake-gallery-grid">
+            {lakePhotos.map((photo) => (
+              <div key={photo.title} className="lake-photo-card">
+                <div
+                  className="lake-photo-img"
+                  style={{ backgroundImage: `url(${photo.img})` }}
+                />
+                <div className="lake-photo-body">
+                  <span className="lake-photo-tag">{photo.tag}</span>
+                  <h4 className="lake-photo-title">{photo.title}</h4>
+                  <p className="lake-photo-desc">{photo.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

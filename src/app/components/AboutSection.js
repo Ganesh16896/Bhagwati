@@ -22,7 +22,7 @@ export default function AboutSection() {
           </div>
           <div className="about-hero-image">
             <Image
-              src="/images/about_right.png"
+              src="/images/about_u.jpg"
               alt=""
               width={800}
               height={400}
@@ -64,6 +64,15 @@ export default function AboutSection() {
               management, environmental compliance, and long-term operational
               excellence.
             </p>
+            <div className="" style={{ borderRadius: "10px" }}>
+              <Image
+                src="/images/manufacture.jpg"
+                alt=""
+                width={800}
+                height={290}
+                className=""
+              />
+            </div>
           </div>
 
           <div className="about-cards">
